@@ -1,0 +1,33 @@
+S13 LIVE CUSTOM APK VERSIONS
+============================
+S13 Breezy-CloX Bridge     com.s13.breezycloxbridge   1.0 (code 1)
+S13 Circle Scale           com.s13.circlescale        1.1 (code 2)
+S13 Crown Volume           com.s13.crownvolume        1.3 (code 4)
+S13 Crown Scroll Block     com.s13.crownscrollblock   1.0 (code 1)
+S13 CloX Wake Fix          com.s13.cloxwakefix         2.0 (code 2)
+
+DEPENDENCIES
+============
+CloX                       com.ailife.clox             6.3 (code 10)
+Breezy Weather             org.breezyweather           6.2.2 (code 60202)
+
+LIVE MAGISK MODULES INCLUDED
+============================
+S13 ASR5803 Wi-Fi Power Save Fix     1.1 (code 2)
+S13 Crown Volume Service             1.0 (code 1)
+S13 MTP + ADB Fix                    1.0 (code 1)
+S13 Real RAM & Storage               1.0 (code 1)
+S13 Real Storage                     1.0 (code 1)
+
+EXCLUDED
+========
+s13_square_compat_poc — disabled experimental module on the watch
+s13_normal_ui — obsolete / not part of final setup
+Older/experimental YouTube builds — excluded; final YouTube modules are in 13-YOUTUBE-FIXES
+
+YOUTUBE FIX STACK
+=================
+Fullscreen Fix             com.s13.youtubefullscreenfix   1.6
+Square-Mode Tab Fix        com.s13.youtubesquaremodefix   v9
+Queue Fit                  com.s13.youtubequeuefitfixv1   v1
+Known-good YouTube         com.google.android.youtube     21.39.523

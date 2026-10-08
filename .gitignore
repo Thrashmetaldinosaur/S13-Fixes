@@ -1,0 +1,12 @@
+# Large assets distributed through GitHub Releases
+12-DEPENDENCIES/CloX_v6.3.apk
+Firmware Backup/*.zip
+Firmware Backup/*.7z
+Firmware Backup/*.rar
+Firmware Backup/*.bin
+
+# Common local/temp files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

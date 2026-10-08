@@ -1,0 +1,24 @@
+PUBLIC / SHAREABLE BUILD
+========================
+
+This copy was sanitized for sharing.
+
+Removed:
+- raw PowerShell/ADB pull-session log
+- private live-state dump containing local author/user references
+- redundant raw ASR5803 module tar/log copy
+
+Anonymized:
+- Magisk module author fields were changed to "S13 Community Fix"
+
+Retained:
+- technical watch/build information needed for replication
+- APK package names and versions
+- Magisk module IDs and versions
+- root/AVB recovery images
+- configuration files
+- install/restore instructions
+
+No intentional personal name, Windows username, email address, phone number,
+home address, Wi-Fi SSID, or account credential is included in the public text
+or module metadata.

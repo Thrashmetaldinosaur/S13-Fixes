@@ -1,0 +1,35 @@
+S13 PUBLIC TECHNICAL STATE
+==========================
+
+Model: S13 / Core 5
+Android: 13
+SDK: 33
+Build: S13_C29_EN_V1.6_20251121
+Product family: YBD_C29_OLED / ASR8601
+
+Root:
+- Magisk 30.7 (30700)
+- Root confirmed
+- Current slot: _a
+
+Power / scanning:
+- mobile_data_always_on = 0
+- wifi_scan_always_enabled = 0
+- ble_scan_always_enabled = 0
+- ASR5803 PS_mode = 1
+
+Lockscreen:
+- locksettings disabled = true
+- lockscreen.disabled = 1
+
+Final enabled custom Magisk modules included in this pack:
+- s13_asr5803_powersave v1.1
+- s13_crown_volume_service v1.0
+- s13_mtp v1.0
+- s13_real_ram_storage v1.0
+- s13_real_storage v1.0
+
+Experimental / intentionally excluded:
+- s13_square_compat_poc
+- s13_normal_ui
+- all YouTube fixes
