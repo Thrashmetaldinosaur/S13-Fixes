@@ -4,11 +4,11 @@
 
 Active face name: `S13 Minimal Weather XL Breezy Cache Zoomed Out 95`.
 
-The XML definition is in [watch.xml](watch.xml), copied from the active directory:
+The **complete XML definition is preserved inside the private TAR**, under:
 
 `/data/user/0/com.ailife.clox/files/wf_active/watch.xml`
 
-It is the **actual active face definition**, not a reconstruction. It uses a black background, large bitmap-font time, weekday graphic, seconds, battery percentage, Breezy Weather condition and Fahrenheit temperature.
+The private archive holds the **actual active face definition**, not a reconstruction. It uses a black background, large bitmap-font time, weekday graphic, seconds, battery percentage, Breezy Weather condition and Fahrenheit temperature.
 
 **This public folder is not a complete restorable watch face.** The face also requires several supporting assets from `wf_active/` (including image sprites, bitmap fonts and a bundled font). These are **not** published here. No private CloX preferences are published.
 
