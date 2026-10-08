@@ -1,6 +1,6 @@
-# Large Files / GitHub Release Assets
+# Large Files and External Downloads
 
-To keep every file committed to the Git repository under 25 MB, large binaries are distributed from the repository's **Releases** page instead.
+To keep every file committed to the Git repository under 25 MB, the required oversized CloX APK is distributed from **GitHub Releases**. The optional firmware backup is separately hosted on **MEGA**.
 
 ## Required large file
 
@@ -24,17 +24,15 @@ After downloading it from Releases, place it here:
 
 The automatic installer checks for this file before starting.
 
-## Firmware backup
+## Optional S13 firmware backup — MEGA
 
-Filename:
+**[Download S13_WT_EN_V1.1_20260309 (MEGA)](https://mega.nz/file/9uRgALhY#ZJstwhSb1AQV3osDAIYPg4tMg15jr39jgXYGzp6lKzo)**
 
-`S13_WT_EN_V1.1_20260309.zip`
+This backup is **hosted on MEGA**, not bundled in the Git repository or GitHub Releases. It is not needed for normal installation of the S13 fixes.
 
-This will also be distributed as a GitHub Release asset because of its size.
+The archived build (`S13_WT_EN_V1.1_20260309`) differs from the build tested for these fixes (`S13_C29_EN_V1.6_20251121`). Do not flash partitions from one onto the other without independently checking hardware, partitions and AVB compatibility.
 
-It is an archival firmware backup, not a universal flash package. See:
-
-`Firmware Backup/README.md`
+The external backup's internal contents, size and SHA-256 have not yet been inspected or verified here. See [`Firmware Backup/README.md`](Firmware%20Backup/README.md) for precautions.
 
 ## YouTube
 
