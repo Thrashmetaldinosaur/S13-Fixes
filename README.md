@@ -206,10 +206,10 @@ More details:
 
 Files over the repo's 25 MB sharing target are distributed through **GitHub Releases**.
 
-Current large assets:
+Large downloads:
 
-- `CloX_v6.3.apk` — required for the CloX/weather portion of the install
-- `S13_WT_EN_V1.1_20260309.zip` — firmware backup / archival recovery resource
+- **CloX v6.3** — required for CloX/weather integration. Download the APK from [GitHub Releases](https://github.com/Thrashmetaldinosaur/S13-Fixes/releases) and place it in `12-DEPENDENCIES/`.
+- **Optional firmware backup:** [S13_WT_EN_V1.1_20260309 (MEGA)](https://mega.nz/file/9uRgALhY#ZJstwhSb1AQV3osDAIYPg4tMg15jr39jgXYGzp6lKzo) — for recovery and firmware research only; **not required** to install these fixes.
 
 See:
 
@@ -217,27 +217,19 @@ See:
 
 ---
 
-# Firmware backup
+# Optional firmware backup
 
-The repository also documents the firmware backup:
+The following separate S13 firmware backup is available **for recovery or research if you need that particular firmware revision**:
 
-`S13_WT_EN_V1.1_20260309`
+**[Download S13_WT_EN_V1.1_20260309 on MEGA](https://mega.nz/file/9uRgALhY#ZJstwhSb1AQV3osDAIYPg4tMg15jr39jgXYGzp6lKzo)**
 
-This is **not** the same build used to develop the primary fix pack.
+- **Archived backup:** `S13_WT_EN_V1.1_20260309`
+- **Build tested for this fix pack:** `S13_C29_EN_V1.6_20251121`
+- **Not required** for ordinary installation of the community fixes.
 
-Tested fix-pack build:
+These are **different firmware revisions**. Do not assume that `init_boot`, `vbmeta`, `boot` or other partitions can be flashed interchangeably. The contents and checksum of the externally hosted backup have **not yet been independently verified**.
 
-`S13_C29_EN_V1.6_20251121`
-
-Archived firmware:
-
-`S13_WT_EN_V1.1_20260309`
-
-See:
-
-[`Firmware Backup/README.md`](Firmware%20Backup/README.md)
-
-Do not assume partitions from those builds are interchangeable.
+Read [`Firmware Backup/README.md`](Firmware%20Backup/README.md) before considering any recovery operation.
 
 ---
 
