@@ -43,3 +43,13 @@ Timing                         5s glance + 5s quiet after screen-off
 Known limitation               briefly shows last app before clock overlay
 Source / recovery docs         15-TWIST-TO-WAKE-GLANCE/README.md
 NOTE: complete Gradle source is in the repo; exact working signed v5.3 APK not yet committed.
+
+OPTIONAL PERFORMANCE / THERMAL (2026-10-09)
+==========================================
+S13 Smart Performance                  v2.3.0 (Magisk: s13_adaptive_perf)
+Foreground top-app uclamp              20.00 (verified after reboot; stock 10.00)
+CPU max and governor                   native 1.5 GHz / schedutil, unchanged
+S13 Virtual-Skin Calibration           v1.2 (Magisk: s13_virtual_skin_tune; OPTIONAL HIGH-RISK)
+Raised thermal levels                  virtual-skin critical 51C / emergency 56C
+Obsolete Power HAL UI Tune             s13_powerhal_ui_tune DISABLED (not distributed)
+New optional modules are NOT part of INSTALL-ALL-AFTER-ROOT.ps1

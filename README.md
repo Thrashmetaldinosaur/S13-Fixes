@@ -36,6 +36,17 @@ If your firmware is different, do **not** blindly flash the included boot/root i
 
 ---
 
+## Optional performance and thermal experiments (2026-10-09)
+
+These additions are **NOT** run by `INSTALL-ALL-AFTER-ROOT.ps1`:
+
+- [Smart Performance v2.3 — foreground uclamp 20.00](16-SMART-PERFORMANCE/README.md): moderate, verified to persist at least through a reboot; no CPU overclock or forced GHz floor.
+- [Experimental Virtual-Skin Thermal v1.2 — 51°C/56°C](17-EXPERIMENTAL-THERMAL/README.md): **high-risk raised thermal limits**, particularly while charging. Not recommended for general installation.
+
+The obsolete experimental `s13_powerhal_ui_tune` UI module is **not** included and should remain disabled. Its vendor Power HAL overlay did not take effect during normal boot on the test firmware.
+
+---
+
 ## What this fixes
 
 - Magisk root/recovery reference
@@ -253,6 +264,10 @@ LARGE-FILES.md
 11-SIM-SEATING/
 12-DEPENDENCIES/
 13-YOUTUBE-FIXES/
+14-CLOX-ACTIVE-WATCH-FACE/
+15-TWIST-TO-WAKE-GLANCE/
+16-SMART-PERFORMANCE/        (optional)
+17-EXPERIMENTAL-THERMAL/     (optional, high-risk)
 
 Firmware Backup/
 SHA256SUMS.txt

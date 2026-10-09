@@ -405,3 +405,11 @@ Before calling the installation finished:
 - [ ] ASR5803 reports `Y / 1`
 
 If all of those pass, your S13 should be very close to the fully fixed reference setup.
+
+---
+
+# 11. Optional general-app performance (2026-10-09)
+
+The [S13 Smart Performance v2.3 package](16-SMART-PERFORMANCE/README.md) applies a **20.00 foreground CPU utilization clamp**, versus the tested `10.00` stock setting, once at boot. It keeps normal Power HAL CPU clock control (up to 1.5 GHz). The result was verified after reboot, but no 20% app-speed increase is claimed. **This is not installed by the one-click script.**
+
+A separate [experimental Virtual-Skin thermal v1.2 package](17-EXPERIMENTAL-THERMAL/README.md) raises two thermal thresholds to 51°C and 56°C. **These are aggressive for a wrist-worn/charging device and are not recommended for general use.** The original thermal configuration is preferable for most users. Also not installed by the one-click script.
