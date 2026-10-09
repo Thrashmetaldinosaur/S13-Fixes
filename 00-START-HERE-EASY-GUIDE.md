@@ -315,6 +315,21 @@ These reduce unnecessary background radio activity.
 
 ---
 
+## Optional: wrist twist-to-wake + quick clock (tested v5.3)
+
+The current reference watch also uses the independently developed **S13 Twist + Glance v5 TEST** v5.3 LSPosed module. Source code and a buildable Gradle project are in [15-TWIST-TO-WAKE-GLANCE](15-TWIST-TO-WAKE-GLANCE/README.md).
+
+- Rotate wrist with screen off to wake the display and show a large OLED-black clock, date, and battery percentage.
+- A single tap dismisses the temporary clock; otherwise the module requests sleep after **5 seconds**.
+- After screen-off, there is a **5-second** quiet period before another wrist wake is allowed.
+- Normal CloX/watch-face behavior, normal Android screen timeout, and other battery settings are not changed. The prior app may be briefly visible before the overlay appears.
+- **LSPosed:** enable `S13 Twist + Glance v5 TEST` (`com.s13.twistglance`) scoped to `com.wiite.wearhealthuart` **ONLY**; do not select Android System Framework or Settings. Disable the earlier v4 lift-to-wake module if installed; do not enable both at once. Reboot.
+- The auto-installer does **not** currently install this module because the owner's working debug-signed APK has not been added to the public repo. Follow the source folder's build instructions. Keep v4 installed for rollback if you are upgrading.
+
+**Do not install on other firmware without independent testing.** This is a convenience clock overlay, *not* a secure Android lock screen.
+
+---
+
 # 8. Optional fixes
 
 ## Remove the lockscreen/pattern
