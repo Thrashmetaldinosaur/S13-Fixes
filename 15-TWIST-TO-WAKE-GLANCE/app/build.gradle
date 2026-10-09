@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.s13.twistglance'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.s13.twistglance'
+        minSdk 26
+        targetSdk 32
+        versionCode 8
+        versionName '5.3-5s-battery'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    sourceSets { main { java.srcDirs = ['../src'] } }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    // Compile-time LSPosed API stubs are excluded from the APK.
+    compileOnly project(':stubs')
+}
