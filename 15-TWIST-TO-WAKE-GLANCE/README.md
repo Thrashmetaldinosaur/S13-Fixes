@@ -16,13 +16,20 @@ The known-good version is **S13 Twist + Glance v5 TEST**, versionCode **8**, ver
 
 ## Reproduce v5.3
 
-See [the complete standalone source archive](S13-Lift-to-Wake-Glance-v5.3-Standalone-Source.tar.xz). This archive is **not a prebuilt APK**. Extract it with `tar -xf` on Windows 11/Windows 10 with tar installed, then open PowerShell in the extracted directory and run:
+**The complete, buildable v5.3 Android project is contained in this GitHub folder.** Its entry point is `src/com/s13/twistglance/Hook.java`, with sensor handling in `WakeEngine.java` and clock UI in `GlanceController.java`. Java 17, Android SDK 35 and Gradle 8.9 are required. Clone/download the repository, then open PowerShell in this directory:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Build-And-Install-v5.ps1
+$tools = Join-Path $env:LOCALAPPDATA 'S13-Glance-Android-Build-Tools'
+$env:JAVA_HOME = Join-Path $tools 'jdk-17'
+$env:ANDROID_HOME = Join-Path $tools 'android-sdk'
+$env:ANDROID_SDK_ROOT = $env:ANDROID_HOME
+$gradle = Join-Path $tools 'gradle-8.9\bin\gradle.bat'
+& $gradle --no-daemon ':app:assembleDebug'
 ```
 
-The helper downloads JDK 17, Android SDK 35 and Gradle 8.9 if needed. Use `-BuildOnly` to compile without installing. The builder checks the exact tested watch firmware before installation. The resulting APK is at `app\build\outputs\apk\debug\app-debug.apk`.
+If those build tools are not installed, install JDK 17, Android SDK platform 35 and Gradle 8.9 from their official sources; the original standalone Windows builder from the development handoff also installs these automatically. The build output is `app\build\outputs\apk\debug\app-debug.apk`.
+
+Before installation, verify firmware with `adb shell getprop ro.build.display.id` (expected: `S13_C29_EN_V1.6_20251121`). Then install via `adb -s 0123456789 install -r app\build\outputs\apk\debug\app-debug.apk`, targeting the correct connected watch. Other firmware was not tested.
 
 **Debug signing:** Builds made on different computers can have different APK signing certificates and may not upgrade an installed v5.3. Do not uninstall your working module to bypass `INSTALL_FAILED_UPDATE_INCOMPATIBLE` without a saved copy of the original APK and LSPosed settings. The owner's known working APK (not uploaded here) had SHA-256 `9F3E10F189B4BB6D00BF646565E5178EDFEBF440492509F6C42C3C89167742A8`.
 
