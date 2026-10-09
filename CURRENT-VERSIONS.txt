@@ -42,4 +42,4 @@ Behavior                       wrist twist -> large clock, date, battery; single
 Timing                         5s glance + 5s quiet after screen-off
 Known limitation               briefly shows last app before clock overlay
 Source / recovery docs         15-TWIST-TO-WAKE-GLANCE/README.md
-NOTE: source is archived separately; exact working signed v5.3 APK not yet committed.
+NOTE: complete Gradle source is in the repo; exact working signed v5.3 APK not yet committed.
