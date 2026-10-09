@@ -31,3 +31,15 @@ Fullscreen Fix             com.s13.youtubefullscreenfix   1.6
 Square-Mode Tab Fix        com.s13.youtubesquaremodefix   v9
 Queue Fit                  com.s13.youtubequeuefitfixv1   v1
 Known-good YouTube         com.google.android.youtube     21.39.523
+
+
+TWIST-TO-WAKE + GLANCE — VERIFIED WORKING ON S13 (2026-10-08)
+===========================================================
+S13 Twist + Glance v5 TEST     com.s13.twistglance      v5.3 (code 8)
+LSPosed scope                  WIITE Watch Health only  com.wiite.wearhealthuart
+Older S13 Twist-to-Wake v4     com.s13.tiltwakeprobetest001  DISABLED for v5.3
+Behavior                       wrist twist -> large clock, date, battery; single tap to open
+Timing                         5s glance + 5s quiet after screen-off
+Known limitation               briefly shows last app before clock overlay
+Source / recovery docs         15-TWIST-TO-WAKE-GLANCE/README.md
+NOTE: source is archived separately; exact working signed v5.3 APK not yet committed.
